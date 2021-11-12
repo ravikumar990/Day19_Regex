@@ -24,5 +24,5 @@ public class RegexUserRegistration {
 		// calling method in UserInfo class to validate password
 		userInfo.userPassword();
 		System.out.println("==================");
-	}
+	 }
 }
