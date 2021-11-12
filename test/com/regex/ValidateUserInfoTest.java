@@ -52,28 +52,28 @@ public class ValidateUserInfoTest {
 	@Test
 	public void mobNumValid() {
 		boolean expectedVal = true;
-		boolean actualResult = validateInfo.mobNum("91-8187819238");
+		boolean actualResult = validateInfo.mobNum("54-5465322154");
 		Assert.assertEquals(expectedVal, actualResult);
 	}
 
 	@Test
 	public void mobNumInValid() {
 		boolean expectedVal = false;
-		boolean actualResult = validateInfo.mobNum("91-8087819238");
+		boolean actualResult = validateInfo.mobNum("54-55465322154");
 		Assert.assertEquals(expectedVal, actualResult);
 	}
 
 	@Test
 	public void passwordValid() {
 		boolean expectedVal = true;
-		boolean actualResult = validateInfo.password("ravi@143");
+		boolean actualResult = validateInfo.password("ab98cDE@&fg");
 		Assert.assertEquals(expectedVal, actualResult);
 	}
 
 	@Test
 	public void passwordInValid() {
 		boolean expectedVal = false;
-		boolean actualResult = validateInfo.password("ravi@123");
+		boolean actualResult = validateInfo.password("ab98cDEfg");
 		Assert.assertEquals(expectedVal, actualResult);
 	}
 }
