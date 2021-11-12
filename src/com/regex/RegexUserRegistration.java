@@ -16,5 +16,9 @@ public class RegexUserRegistration {
 		// calling method in UserInfo class to validate email
 		userInfo.userEmailId();
 		System.out.println("==================");
+
+		// calling method in UserInfo class to validate email
+		userInfo.userMobNum();
+		System.out.println("==================");
 	}
 }

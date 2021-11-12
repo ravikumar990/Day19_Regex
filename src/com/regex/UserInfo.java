@@ -32,4 +32,13 @@ public class UserInfo {
 		// call firstName method in Validate class
 		validateInfo.emailId(emailID);
 	}
+
+	public void userMobNum() {
+		// taking user input
+		System.out.println("Enter Your Mobile Number : ");
+		String mobileNum = sc.next();
+
+		// call firstName method in Validate class
+		validateInfo.mobNum(mobileNum);
+	}
 }
