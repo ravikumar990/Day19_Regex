@@ -30,7 +30,7 @@ public class ValidateUserInfo {
 
 	public void password(String pswrd) {
 		// regex pattern
-		String regex = "^[a-zA-Z]{8,}$";
+		String regex = "^[a-z](?=.*[A-Z]).{8,}$";
 		checkPattern(regex, pswrd);
 	}
 
