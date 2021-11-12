@@ -46,5 +46,5 @@ public class ValidateUserInfo {
 		} else {
 			System.out.println("Input is InValid");
 		}
-	}
+	 }
 }
