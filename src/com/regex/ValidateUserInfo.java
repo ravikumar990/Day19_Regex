@@ -16,6 +16,12 @@ public class ValidateUserInfo {
 		checkPattern(regex, lastName);
 	}
 
+	public void emailId(String emailId) {
+		// regex pattern
+		String regex = "^[a-zA-z0-9]+([.][0-9a-zA-z]+)*@[a-zA-z]+.[a-z]{2,3}([.][a-z]{2,3})*$";
+		checkPattern(regex, emailId);
+	}
+
 	// check regex pattern and input
 	public void checkPattern(String regexPattern, String userInput) {
 		Pattern pattern = Pattern.compile(regexPattern);
