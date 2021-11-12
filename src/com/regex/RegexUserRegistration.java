@@ -17,7 +17,7 @@ public class RegexUserRegistration {
 		userInfo.userEmailId();
 		System.out.println("==================");
 
-		// calling method in UserInfo class to validate email
+		// calling method in UserInfo class to validate mobile number
 		userInfo.userMobNum();
 		System.out.println("==================");
 
