@@ -49,5 +49,5 @@ public class UserInfo {
 
 		// call firstName method in Validate class
 		validateInfo.password(passWord);
-	}
+	 }
 }
