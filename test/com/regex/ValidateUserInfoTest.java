@@ -11,7 +11,7 @@ public class ValidateUserInfoTest {
 	public void firstNameValid() throws UserRegistrationException {
 		try {
 			String expectedVal = "Happy";
-			String actualResult = validateInfo.firstName("Mukul");
+			String actualResult = validateInfo.firstName("Ravi");
 			Assert.assertEquals(expectedVal, actualResult);
 		} catch (UserRegistrationException e) {
 			Assert.assertEquals(UserRegistrationException.ExceptionType.INVALID_FIRST_NAME, e.type);
@@ -22,7 +22,7 @@ public class ValidateUserInfoTest {
 	public void firstNameInValid() {
 		try {
 			String expectedVal = "Sad";
-			String actualResult = validateInfo.firstName("mukul");
+			String actualResult = validateInfo.firstName("ravi");
 			Assert.assertEquals(expectedVal, actualResult);
 		} catch (UserRegistrationException e) {
 			Assert.assertEquals(UserRegistrationException.ExceptionType.INVALID_FIRST_NAME, e.type);
@@ -33,7 +33,7 @@ public class ValidateUserInfoTest {
 	public void lastNameValid() {
 		try {
 			String expectedVal = "Happy";
-			String actualResult = validateInfo.lastName("Jain");
+			String actualResult = validateInfo.lastName("Kumar");
 			Assert.assertEquals(expectedVal, actualResult);
 		} catch (UserRegistrationException e) {
 			Assert.assertEquals(UserRegistrationException.ExceptionType.INVALID_FIRST_NAME, e.type);
@@ -44,7 +44,7 @@ public class ValidateUserInfoTest {
 	public void lastNameInValid() {
 		try {
 			String expectedVal = "Sad";
-			String actualResult = validateInfo.lastName("jain");
+			String actualResult = validateInfo.lastName("kumar");
 			Assert.assertEquals(expectedVal, actualResult);
 		} catch (UserRegistrationException e) {
 			Assert.assertEquals(UserRegistrationException.ExceptionType.INVALID_FIRST_NAME, e.type);
@@ -55,7 +55,7 @@ public class ValidateUserInfoTest {
 	public void emailIdValid() {
 		try {
 			String expectedVal = "Happy";
-			String actualResult = validateInfo.emailId("mukul.jain@sample.com");
+			String actualResult = validateInfo.emailId("ravi.kumar@sample.com");
 			Assert.assertEquals(expectedVal, actualResult);
 		} catch (UserRegistrationException e) {
 			Assert.assertEquals(UserRegistrationException.ExceptionType.INVALID_FIRST_NAME, e.type);
@@ -66,7 +66,7 @@ public class ValidateUserInfoTest {
 	public void emailIdInValid() {
 		try {
 			String expectedVal = "Sad";
-			String actualResult = validateInfo.emailId("mukul.jain.co.in");
+			String actualResult = validateInfo.emailId("ravi.kumar.co.in");
 			Assert.assertEquals(expectedVal, actualResult);
 		} catch (UserRegistrationException e) {
 			Assert.assertEquals(UserRegistrationException.ExceptionType.INVALID_FIRST_NAME, e.type);
